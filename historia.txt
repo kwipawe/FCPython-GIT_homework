@@ -1,0 +1,323 @@
+
+
+$ git log -p zwrotka-1.txt
+commit 32a923faa5e55de0276c315ef5a7c2905c344498
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:42:29 2024 +0200
+
+    dodanie zwrotki-3 i refrenu-3, dodanie nazw plikow w piosenka.txt
+
+diff --git a/piosenka.txt b/piosenka.txt
+index bb032c6..c1fbbff 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,18 +2,14 @@ Kult "Poznaj swój raj"
+
+ {pozdro rockowizna!}
+
++zwrotka-1.txt
+
++refren-1.txt
+
+-Zlew ma to do siebie że wiele się nie wie
+-Sprawiedliwy ponoć się nigdy nie zachwieje
+-Siedem kul dla zdrajcy donosił na Polaków
+-Kto rozróżni skinów od dzieci kwiatów
++zwrotka-2.txt
+
+-Hej hej poznaj swój raj
+-Hej hej posprzątaj tam
+-Rozpierdoliliście ulice w moim mieście
+-Macie się wynosić więc się wynieście
+-Hej hej poznaj swój raj
+-Hej hej sprzedaj go nam
+-Marność nad marnościami proszę towarzyszy
+-Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
++refren-2.txt
++
++zwrotka-3.txt
++
++refren-3.txt
+
+
+$ git log -p zwrotka-2.txt
+commit 5d98b3bb6a6b5b6b809821cee00687a4645e533d
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:38:23 2024 +0200
+
+    utw refrenu-2
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 198bf61..bb032c6 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,14 +2,7 @@ Kult "Poznaj swój raj"
+
+ {pozdro rockowizna!}
+
+-Hej hej poznaj swój raj
+-Hej hej posprzątaj tam
+-Rozpierdoliliście ulice w moim mieście
+-Chcecie mnie wieszać to mnie powieście
+-Hej hej poznaj swój raj
+-Hej hej sprzedaj go nam
+-Marność nad marnościami proszę towarzyszy
+-Jeden dużo gada drugi milczy w ciszy
++
+
+ Zlew ma to do siebie że wiele się nie wie
+ Sprawiedliwy ponoć się nigdy nie zachwieje
+
+commit 08d6e0718c55af901dc4297d09634416cf69bc52
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+
+commit 443dd4dd8e223a44add41662b77c12e4453360c6
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:36:13 2024 +0200
+
+    utw rerfrenu-1
+
+diff --git a/zwrotka-1.txt b/zwrotka-1.txt
+index 5623a8f..be26f4f 100644
+--- a/zwrotka-1.txt
++++ b/zwrotka-1.txt
+@@ -1,3 +1,4 @@
++
+ Wierzę że Pan jednak mnie nie opuści
+ Jak by miał z rąk taką zdobycz wypuścić
+ Pan ale który
+
+commit c6c9a7316e8e397c8a08e8a135d06d0c0f3f361f
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:32:38 2024 +0200
+
+    utw zwrotki-1
+
+diff --git a/zwrotka-1.txt b/zwrotka-1.txt
+new file mode 100644
+index 0000000..5623a8f
+--- /dev/null
++++ b/zwrotka-1.txt
+@@ -0,0 +1,5 @@
++Wierzę że Pan jednak mnie nie opuści
++Jak by miał z rąk taką zdobycz wypuścić
++Pan ale który
++Pytasz się zdziwiony
++Otóż ten jeden z odpowiedniej strony
+\ No newline at end of file
+
+commit 08d6e0718c55af901dc4297d09634416cf69bc52
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:37:14 2024 +0200
+
+    utw zwrotki-2
+
+diff --git a/zwrotka-2.txt b/zwrotka-2.txt
+new file mode 100644
+index 0000000..49400c7
+--- /dev/null
++++ b/zwrotka-2.txt
+@@ -0,0 +1,5 @@
++
++Kto ufa bogactwu swemu może upadnie
++Burza szaleje bezbożny jest na dnie
++Katecheta w przerwach obmacuje chłopców skrycie
++Pierwszą komunię trzeba opić należycie
+\ No newline at end of file
+
+
+$ git log -p zwrotka-3.txt
+commit 32a923faa5e55de0276c315ef5a7c2905c344498
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:42:29 2024 +0200
+
+    dodanie zwrotki-3 i refrenu-3, dodanie nazw plikow w piosenka.txt
+
+diff --git a/zwrotka-3.txt b/zwrotka-3.txt
+new file mode 100644
+index 0000000..9576d5a
+--- /dev/null
++++ b/zwrotka-3.txt
+@@ -0,0 +1,5 @@
++
++Zlew ma to do siebie że wiele się nie wie
++Sprawiedliwy ponoć się nigdy nie zachwieje
++Siedem kul dla zdrajcy donosił na Polaków
++Kto rozróżni skinów od dzieci kwiatów
+\ No newline at end of file
+
+
+$ git log -p refren-1.txt
+commit 4ca49c470194a08965f7e05521c73d82b967c9fb (HEAD -> master)
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:46:37 2024 +0200
+
+    Revert "usuniecie ostatniej lini z refrenu-1"
+
+    This reverts commit c5318774ff39b1effd788d7b5aae94da41beb490.
+
+diff --git a/refren-1.txt b/refren-1.txt
+index a90f74b..4526580 100644
+--- a/refren-1.txt
++++ b/refren-1.txt
+@@ -9,4 +9,5 @@ Marność nad marnościami proszę towarzyszy
+ Jeden dużo gada drugi milczy w ciszy
+ Hej hej poznaj swój raj
+ Hej hej sprzedaj go nam
+-Marność nad marnościami proszę towarzyszy
+\ No newline at end of file
++Marność nad marnościami proszę towarzyszy
++Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
+
+commit c5318774ff39b1effd788d7b5aae94da41beb490
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:44:47 2024 +0200
+
+    usuniecie ostatniej lini z refrenu-1
+
+diff --git a/refren-1.txt b/refren-1.txt
+index 4526580..a90f74b 100644
+--- a/refren-1.txt
++++ b/refren-1.txt
+@@ -9,5 +9,4 @@ Marność nad marnościami proszę towarzyszy
+ Jeden dużo gada drugi milczy w ciszy
+ Hej hej poznaj swój raj
+ Hej hej sprzedaj go nam
+-Marność nad marnościami proszę towarzyszy
+-Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
++Marność nad marnościami proszę towarzyszy
+\ No newline at end of file
+
+commit 443dd4dd8e223a44add41662b77c12e4453360c6
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:36:13 2024 +0200
+
+    utw rerfrenu-1
+
+diff --git a/refren-1.txt b/refren-1.txt
+new file mode 100644
+index 0000000..4526580
+--- /dev/null
++++ b/refren-1.txt
+@@ -0,0 +1,13 @@
++
++Hej hej poznaj swój raj
++Hej hej oddaj go nam
++Mieliśmy wygrać ale przegraliśmy
++Ryj taki jak twój może w nocy się przyśnić
++Hej hej poznaj swój raj
++Hej hej sprzedaj go nam
++Marność nad marnościami proszę towarzyszy
++Jeden dużo gada drugi milczy w ciszy
++Hej hej poznaj swój raj
++Hej hej sprzedaj go nam
++Marność nad marnościami proszę towarzyszy
++Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
+
+
+$ git log -p refren-2.txt
+commit 5d98b3bb6a6b5b6b809821cee00687a4645e533d
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:38:23 2024 +0200
+
+    utw refrenu-2
+
+diff --git a/refren-2.txt b/refren-2.txt
+new file mode 100644
+index 0000000..6ec79c2
+--- /dev/null
++++ b/refren-2.txt
+@@ -0,0 +1,9 @@
++
++Hej hej poznaj swój raj
++Hej hej posprzątaj tam
++Rozpierdoliliście ulice w moim mieście
++Chcecie mnie wieszać to mnie powieście
++Hej hej poznaj swój raj
++Hej hej sprzedaj go nam
++Marność nad marnościami proszę towarzyszy
++Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
+
+
+$ git log -p refren-3.txt
+commit 32a923faa5e55de0276c315ef5a7c2905c344498
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:42:29 2024 +0200
+
+    dodanie zwrotki-3 i refrenu-3, dodanie nazw plikow w piosenka.txt
+
+diff --git a/refren-3.txt b/refren-3.txt
+new file mode 100644
+index 0000000..63e8795
+--- /dev/null
++++ b/refren-3.txt
+@@ -0,0 +1,9 @@
++
++Hej hej poznaj swój raj
++Hej hej posprzątaj tam
++Rozpierdoliliście ulice w moim mieście
++Macie się wynosić więc się wynieście
++Hej hej poznaj swój raj
++Hej hej sprzedaj go nam
++Marność nad marnościami proszę towarzyszy
++Jeden dużo gada drugi milczy w ciszy
+\ No newline at end of file
+
+
+$ git log
+commit 4ca49c470194a08965f7e05521c73d82b967c9fb (HEAD -> master)
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:46:37 2024 +0200
+
+    Revert "usuniecie ostatniej lini z refrenu-1"
+
+    This reverts commit c5318774ff39b1effd788d7b5aae94da41beb490.
+
+commit c5318774ff39b1effd788d7b5aae94da41beb490
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:44:47 2024 +0200
+
+    usuniecie ostatniej lini z refrenu-1
+
+commit 32a923faa5e55de0276c315ef5a7c2905c344498
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:42:29 2024 +0200
+
+    dodanie zwrotki-3 i refrenu-3, dodanie nazw plikow w piosenka.txt
+
+commit 5d98b3bb6a6b5b6b809821cee00687a4645e533d
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:38:23 2024 +0200
+
+    utw refrenu-2
+
+commit 08d6e0718c55af901dc4297d09634416cf69bc52
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:37:14 2024 +0200
+
+    utw zwrotki-2
+
+commit 443dd4dd8e223a44add41662b77c12e4453360c6
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:36:13 2024 +0200
+
+    utw rerfrenu-1
+
+commit c6c9a7316e8e397c8a08e8a135d06d0c0f3f361f
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sun Aug 18 00:32:38 2024 +0200
+
+    utw zwrotki-1
+
+commit 50d9ae26a33579744caea6cb9e98af94d2fab5e4
+Author: Paweł Kwiatkowski <pkwiatkowskioc@gmail.com>
+Date:   Sat Aug 17 16:17:14 2024 +0200
+
+    dodanie piosenki
+
+
